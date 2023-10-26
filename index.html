@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox</title>
+    
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <img style="width: 99.2vw; height: 790vh; opacity: 0.3; position: absolute;" src="screenshot.png">
-
     <!-- TO-DO -->
     <!-- HEADER:
     2 colonne - fixed -->
@@ -16,9 +16,22 @@
         <div class="row space-btw">
             <div class="col-header temp-style-1">
                 <!-- Lista primo menù -->
+                <ul class="menu-sx-ul">
+                    <li class="logo menu-sx-li">
+                        <img src="./img/logo-small.png" alt="logo Dropbox" class="logo-img">
+                    </li>
+                    <li class="menu-sx-li">Perchè Dropbox</li>
+                    <li class="menu-sx-li">Funzioni</li>
+                    <li class="menu-sx-li">Piani e Prezzi</li>
+                </ul>
             </div>
-            <div class="col-header temp-style-1">
-                <!-- Lista secondo menù -->
+            <div class="col-header temp-style-1 menu-align-flex-end">
+                <ul class="menu-sx-ul">
+                    <li class="menu-sx-li">Supporto</li>
+                    <li class="menu-sx-li">Contatta l'ufficio vendite</li>
+                    <li class="menu-sx-li">Accedi</li>
+                    <li class="menu-sx-li">Inizia</li>
+                </ul>
             </div>
         </div>
     </header>
@@ -30,11 +43,20 @@
     <main>
         <!-- Sezione Jumbotron -->
         <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-100 temp-style-2"></div>
-                    <div class="col-30 temp-style-2"></div>
-                    <div class="col-70 temp-style-2"></div>
+            <div class="bg-jumbo-color">
+                <div class="container">
+                    <div class="row" style="gap: 30px 0;">
+                        <div class="col-100 temp-style-2 font-size-title">Tutto ciò che ti serve per il lavoro, in un unico posto</div>
+                        <div class="col-30 temp-style-2" style="position: relative;">
+                            <p class="jumbo-descr">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                            <input type="button" class="general-btn" value="Inizia la tua prova gratuita">
+                            <div class="cancel-free-trial">Annulla in qualsiasi momento</div>
+                            <i class="fas fa-arrow-down fa-2xl jumbo-arrow"></i>
+                        </div>
+                        <div class="col-70 temp-style-2">
+                            <img src="./img/jumbo.png" alt="jumbo image" class="jumbo-img">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -48,8 +70,7 @@
             <div class="container">
                 <div class="row space-btw">
                     <!-- !!!ALTEZZE DA RIMUOVERE!!! -->
-                    <div class="col-100 temp-style-2" style="height: 40px;"></div>
-                    <div class="col-100 temp-style-2 margin-50-top" style="height: 40px;"></div>
+                    <div class="col-100 temp-style-2" style="height: 100px;"></div>
                     <!-- MIN-HEIGHT COL-30 -->
                     <div class="col-30 temp-style-2 margin-40-top" style="height: 880px;"></div>
                     <div class="col-30 temp-style-2 margin-40-top" style="height: 880px;"></div>
