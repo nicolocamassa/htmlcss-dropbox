@@ -21,10 +21,12 @@
     height: 450px;
 }
 
-
+section:nth-of-type(1){
+    padding-top: 150px;
+}
 /* COMUNI */
 .container{
-    padding-top: 150px;
+
     max-width: 1080px;
     height: 100%;
     width: 100%;
@@ -143,6 +145,15 @@ header{
 .no-gap-width{
     width: calc(100% / 3);
     display: flex;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 120px;
+}
+.col-20{
+    width: calc(100% / 5);
+    height: 400px;
 }
 
 
