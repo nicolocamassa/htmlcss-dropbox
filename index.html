@@ -14,7 +14,7 @@
     2 colonne - fixed -->
     <header>
         <div class="row space-btw">
-            <div class="col-header temp-style-1">
+            <div class="col-header">
                 <!-- Lista primo menù -->
                 <ul class="menu-sx-ul">
                     <li class="logo menu-sx-li">
@@ -25,7 +25,7 @@
                     <li class="menu-sx-li">Piani e Prezzi</li>
                 </ul>
             </div>
-            <div class="col-header temp-style-1 menu-align-flex-end">
+            <div class="col-header menu-align-flex-end">
                 <ul class="menu-sx-ul">
                     <li class="menu-sx-li">Supporto</li>
                     <li class="menu-sx-li">Contatta l'ufficio vendite</li>
@@ -43,7 +43,7 @@
     <main>
         <!-- Sezione Jumbotron -->
         <section>
-            <div class="bg-jumbo-color">
+            <div class="bg-jumbo">
                 <div class="container">
                     <div class="row" style="gap: 30px 0;">
                         <div class="col-100 temp-style-2 font-size-title">Tutto ciò che ti serve per il lavoro, in un unico posto</div>
@@ -67,15 +67,136 @@
     <!-- 4 colonne -->
         <!-- Sezione Generale -->
         <section class="general">
-            <div class="container">
+            <div class="container margin-50-top">
                 <div class="row space-btw">
                     <!-- !!!ALTEZZE DA RIMUOVERE!!! -->
-                    <div class="col-100 temp-style-2" style="height: 100px;"></div>
+                    <div class="col-100 temp-style-2" style="height: 100px;">
+                        <h2 class="sub-title">Trova il piano business che fa per te</h2>
+
+                        <div class="checkbox-div">
+                            <input type="checkbox" name="Fatturazione mensile" id="monthly">
+                            <label for="vehicle3">Fatturazione mensile</label>
+                        </div>
+
+                        <div class="checkbox-div">
+                            <input type="checkbox" name="Fatturazione mensile" id="annual">
+                            <label for="vehicle3">Fatturazione Annuale</label>
+                        </div>
+                    </div>
                     <!-- MIN-HEIGHT COL-30 -->
-                    <div class="col-30 temp-style-2 margin-40-top" style="height: 880px;"></div>
-                    <div class="col-30 temp-style-2 margin-40-top" style="height: 880px;"></div>
-                    <div class="col-30 temp-style-2 margin-40-top" style="height: 880px;"></div>
-                    <div class="col-100 temp-style-2 margin-40-top" style="height: 240px;"></div>
+                    <div class="col-30 temp-style-2 margin-50-top" style="height: 880px;">
+                        <div class="col-plans-type">
+                            <i class="fas fa-user"></i>
+                            <span class="type-user">Singolo</span>
+                        </div>
+
+                        <div class="info-plan padding-plans">
+                            <h3>Professional</h3>
+                            <div class="info-price">
+                                <div class="price-plans">&euro; 12.00</div>
+                                <div class="date-plans">&sol;mese</div>
+                            </div>
+
+                            <ul class="detailed-info-list">
+                                <li><span class="fas fa-user"></span>1 utente</li>
+                                <li><span class="fas fa-user"></span>5 TB di spazio di archiviazione sicuro</li>
+                                <li><span class="fas fa-user"></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                            </ul>
+
+                            <input type="button" class="general-btn width-100" value="Inizia la tua prova gratuita">
+
+                            <div class="purchase-plan">oppure <a href="#">acquista ora</a></div>
+                            <hr>
+                                <ul class="highlights-plans-list">
+                                    <li>
+                                        </span>Punti Salienti del piano
+                                    </li>
+                                    <li>
+                                        <span class="fas fa-check"></span>Invia file fino a 100 GB con Dropbox Transfert 
+                                    </li>
+                                    <li>
+                                        <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
+                                    </li>
+                                </ul>
+                        </div>
+
+                        
+                    </div>
+                    <div class="col-30 temp-style-2 margin-50-top" style="height: 880px;">
+                        <div class="col-plans-type">
+                            <i class="fas fa-user"></i>
+                            <span class="type-user">Team</span>
+                        </div>
+
+                        <div class="info-plan padding-plans">
+                            <h3>Professional</h3>
+                            <div class="info-price">
+                                <div class="price-plans">&euro; 12.00</div>
+                                <div class="date-plans">&sol;mese</div>
+                            </div>
+
+                            <ul class="detailed-info-list">
+                                <li><span class="fas fa-user"></span>1 utente</li>
+                                <li><span class="fas fa-user"></span>5 TB di spazio di archiviazione sicuro</li>
+                                <li><span class="fas fa-user"></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                            </ul>
+
+                            <input type="button" class="general-btn width-100" value="Inizia la tua prova gratuita">
+
+                            <div class="purchase-plan">oppure <a href="#">acquista ora</a></div>
+                            <hr>
+                                <ul class="highlights-plans-list">
+                                    <li>
+                                        </span>Punti Salienti del piano
+                                    </li>
+                                    <li>
+                                        <span class="fas fa-check"></span>Invia file fino a 100 GB con Dropbox Transfert 
+                                    </li>
+                                    <li>
+                                        <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
+                                    </li>
+                                </ul>
+                        </div>
+
+                        
+                    </div>
+                    <div class="col-30 temp-style-2 margin-50-top" style="height: 880px;">
+                        <div class="col-plans-type">
+                            <i class="fas fa-user"></i>
+                            <span class="type-user">Azienda</span>
+                        </div>
+
+                        <div class="info-plan padding-plans">
+                            <h3>Professional</h3>
+                            <div class="info-price">
+                                <div class="price-plans">&euro; 12.00</div>
+                                <div class="date-plans">&sol;mese</div>
+                            </div>
+
+                            <ul class="detailed-info-list">
+                                <li><span class="fas fa-user"></span>1 utente</li>
+                                <li><span class="fas fa-user"></span>5 TB di spazio di archiviazione sicuro</li>
+                                <li><span class="fas fa-user"></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                            </ul>
+
+                            <input type="button" class="general-btn width-100" value="Inizia la tua prova gratuita">
+
+                            <div class="purchase-plan">oppure <a href="#">acquista ora</a></div>
+                            <hr>
+                                <ul class="highlights-plans-list">
+                                    <li>
+                                        </span>Punti Salienti del piano
+                                    </li>
+                                    <li>
+                                        <span class="fas fa-check"></span>Invia file fino a 100 GB con Dropbox Transfert 
+                                    </li>
+                                    <li>
+                                        <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-100 temp-style-2 margin-50-top" style="height: 240px;"></div>
                 </div>
         </section>
 
