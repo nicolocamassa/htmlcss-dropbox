@@ -189,6 +189,15 @@ header{
     font-size: 35px;
 }
 
+.font-size-3d-title{
+    font-size: 25px;
+}
+
+.font-size-bigger{
+    font-size: 35px;
+    margin-right: 250px;
+}
+
 .width-100{
     width: 100%;
 }
@@ -366,6 +375,19 @@ hr{
 /* CARATTERISTICHE */
 .auto-height{
     height: auto;
+}
+
+/* PARTNERS */
+.squares-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 50%;
+    height: calc(100vw / 6);
+    border: 1px solid black;
 }
 
 /* FOOTER */
