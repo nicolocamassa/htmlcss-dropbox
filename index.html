@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox</title>
-    
+
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
     <!-- TO-DO -->
     <!-- HEADER:
@@ -15,7 +19,7 @@
     <header>
         <div class="row space-btw">
             <div class="col-header">
-                <!-- Lista primo menù -->
+                <!-- Lista menù [HEADER/1]-->
                 <ul class="menu-sx-ul">
                     <li class="logo menu-sx-li">
                         <img src="./img/logo-small.png" alt="logo Dropbox" class="logo-img">
@@ -25,6 +29,8 @@
                     <li class="menu-sx-li">Piani e Prezzi</li>
                 </ul>
             </div>
+
+            <!-- Lista menù [HEADER/2]-->
             <div class="col-header menu-align-flex-end">
                 <ul class="menu-sx-ul">
                     <li class="menu-sx-li">Supporto</li>
@@ -46,11 +52,16 @@
                     <div class="row" style="gap: 30px 0;">
 
                         <!-- Titolo principale [JUMBOTRON] -->
-                        <div class="col-100"><h2 class="jumbo-title">Tutto ciò che ti serve per il lavoro, in un unico posto</h2></div>
+                        <div class="col-100">
+                            <h2 class="jumbo-title">Tutto ciò che ti serve per il lavoro, in un unico posto</h2>
+                        </div>
 
                         <!-- Descrizione [JUMBOTRON] -->
                         <div class="col-30">
-                            <p class="jumbo-descr">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                            <p class="jumbo-descr">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono
+                                accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione
+                                sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro
+                                esistente.</p>
                             <input type="button" class="general-btn" value="Inizia la tua prova gratuita">
                             <div class="cancel-free-trial">Annulla in qualsiasi momento</div>
 
@@ -69,8 +80,8 @@
 
         <!-- PIANI -->
         <div class="container margin-50-top padding-top-90">
-        <section class="general">
-            <!-- Container piccolo [PIANI] -->
+            <section class="general">
+                <!-- Container piccolo [PIANI] -->
                 <div class="row space-btw">
 
                     <div class="col-100">
@@ -90,181 +101,197 @@
                     </div>
 
                     <!-- 3 Colonne per i diversi piani [PIANI] -->
-                    <!-- Piano Singolo [PIANI] -->
+                    <!-- Piano Singolo [PIANI (SINGOLO)] -->
                     <div class="col-30 margin-50-top border-column min-height-auto">
 
-                        <!-- Icona e titolo [PIANI] -->
+                        <!-- Icona e titolo [PIANI (SINGOLO)] -->
                         <div class="col-plans-type border-bottom">
                             <i class="fas fa-user"></i>
                             <span class="type-user">Singolo</span>
                         </div>
 
-                        <div class="info-plan padding-plans">
-                            <!-- Tipo di piano [PIANI] -->
-                            <h3>Professional</h3>
+                        <div class="info-plan padding-plans" style="display: flex; flex-direction: column;">
+                            <!-- Tipo di piano [PIANI (SINGOLO)] -->
+                            <div class="container-li-btn">
+                                <h3>Professional</h3>
 
-                            <!-- Informazione prezzo [PIANI] -->
-                            <div class="info-price">
-                                <div class="price-plans"><b>&euro; 12.00</b></div>
-                                <div class="date-plans">&sol;mese</div>
+                                <!-- Informazione prezzo [PIANI (SINGOLO)] -->
+                                <div class="info-price">
+                                    <div class="price-plans"><b>&euro; 12.00</b></div>
+                                    <div class="date-plans writing-grey">&sol;mese</div>
+                                </div>
+
+                                <!-- Informazioni di utilizzo [PIANI (SINGOLO)] -->
+                                <ul class="detailed-info-list highlights-plans-list">
+                                    <li><span class="fas fa-user"></span>1 utente</li>
+                                    <li><span class="fas fa-folder"></span>5 TB di spazio di archiviazione sicuro</li>
+                                    <li><span class="fas fa-share-nodes"></span>Funzioni di produttività premium e
+                                        condivisione file semplice e sicura</li>
+                                </ul>
+
+                                <!-- Pulsante prova gratuita [PIANI (SINGOLO)] -->
+                                <input type="button" class="general-btn width-100 btn-align" value="Inizia la tua prova gratuita">
                             </div>
-
-                            <!-- Informazioni di utilizzo [PIANI] -->
-                            <ul class="detailed-info-list highlights-plans-list">
-                                <li><span class="fas fa-user"></span>1 utente</li>
-                                <li><span class="fas fa-folder"></span>5 TB di spazio di archiviazione sicuro</li>
-                                <li><span class="fas fa-share-nodes"></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
-                            </ul>
-
-                            <!-- Pulsante prova gratuita [PIANI] -->
-                            <input type="button" class="general-btn width-100" value="Inizia la tua prova gratuita">
                             <div class="purchase-plan">oppure <a href="#">acquista ora</a></div>
 
-                            <!-- Punti salienti [PIANI] -->
+                            <!-- Punti salienti [PIANI (SINGOLO)] -->
                             <hr class="hr-plans">
-                                <ul class="highlights-plans-list">
-                                    <li>
-                                        <span>Punti Salienti del piano</span>
-                                    </li>
-                                    <li>
-                                        <span class="fas fa-check"></span>Invia file fino a 100 GB con Dropbox Transfert 
-                                    </li>
-                                    <li>
-                                        <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
-                                    </li>
-                                </ul>
+                            <ul class="highlights-plans-list">
+                                <li>
+                                    <span><b>Punti Salienti del piano</b></span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-check"></span>Invia file fino a 100 GB con Dropbox Transfert
+                                </li>
+                                <li>
+                                    <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
 
-                    <!-- Piano Team [PIANI] -->
+                    <!-- Piano Team [PIANI (TEAM)] -->
                     <div class="col-30 margin-50-top border-column min-height-auto">
 
-                        <!-- Icona e titolo [PIANI] -->
+                        <!-- Icona e titolo [PIANI (TEAM)] -->
                         <div class="col-plans-type border-bottom">
                             <i class="fas fa-users"></i>
                             <span class="type-user">Team</span>
                         </div>
 
                         <div class="info-plan padding-plans">
-                            <!-- Tipo di piano [PIANI] -->
-                            <h3>Advanced</h3>
-                            <div class="info-price">
-                                <div class="price-plans"><b>&euro; 18.00</b></div>
-                                <div class="date-plans">&sol;utente&sol;mese</div>
+                            <!-- Tipo di piano [PIANI (TEAM)] -->
+                            <div class="container-li-btn">
+                                <h3>Advanced</h3>
+                                <div class="info-price">
+                                    <div class="price-plans"><b>&euro; 18.00</b></div>
+                                    <div class="date-plans writing-grey">&sol;utente&sol;mese</div>
+                                </div>
+
+                                <!-- Informazioni di utilizzo [PIANI (TEAM)] -->
+                                <ul class="detailed-info-list highlights-plans-list">
+                                    <li><span class="fas fa-user"></span>3 o pi&ugrave; utenti</li>
+                                    <li><span class="fas fa-folder"></span>Tutto lo spazio di cui ha bisogno il tuo team
+                                    </li>
+                                    <li><span class="fas fa-share-nodes"></span>Sofisticate funzioni di controllo e per
+                                        tenere al sicuro tutti i file del tuo team</li>
+                                        
+                                </ul>
+
+                                <!-- Pulsante prova gratuita [PIANI (TEAM)] -->
+                                <input type="button" class="general-btn width-100 btn-align" value="Inizia la tua prova gratuita">
                             </div>
-
-                            <!-- Informazioni di utilizzo [PIANI] -->
-                            <ul class="detailed-info-list highlights-plans-list">
-                                <li><span class="fas fa-user"></span>3 o pi&ugrave; utenti</li>
-                                <li><span class="fas fa-folder"></span>Tutto lo spazio di cui ha bisogno il tuo team</li>
-                                <li><span class="fas fa-share-nodes"></span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
-                            </ul>
-
-                            <!-- Pulsante prova gratuita [PIANI] -->
-                            <input type="button" class="general-btn width-100" value="Inizia la tua prova gratuita">
                             <div class="purchase-plan">oppure <a href="#">acquista ora</a></div>
 
-                            <!-- Punti salienti [PIANI] -->
+                            <!-- Punti salienti [PIANI (TEAM)] -->
                             <hr class="hr-plans">
-                                <ul class="highlights-plans-list">
-                                    <li>
-                                        <span>Punti Salienti del piano</span>
-                                    </li>
-                                    <li>
-                                        <span class="fas fa-check"></span>Nessun limite di spazio per i file
-                                    </li>
-                                    <li>
-                                        <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
-                                    </li>
-                                    <li>
-                                        <span class="fas fa-check"></span>Risparmio del 50&percnt; rispetto alle iscrizione singole 
-                                    </li>
-                                    <li>
-                                        <span class="fas fa-check"></span>Possibilt&agrave; di inserire nuovi membri del team
-                                    </li>
-                                    <li>
-                                        <span class="fas fa-check"></span>Gestione dei permessi in base ai ruoli
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="highlights-plans-list">
+                                <li>
+                                    <span><b>Punti Salienti del piano</b></span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-check"></span>Nessun limite di spazio per i file
+                                </li>
+                                <li>
+                                    <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
+                                </li>
+                                <li>
+                                    <span class="fas fa-check"></span>Risparmio del 50&percnt; rispetto alle iscrizione
+                                    singole
+                                </li>
+                                <li>
+                                    <span class="fas fa-check"></span>Possibilt&agrave; di inserire nuovi membri del
+                                    team
+                                </li>
+                                <li>
+                                    <span class="fas fa-check"></span>Gestione dei permessi in base ai ruoli
+                                </li>
+                            </ul>
                         </div>
-                    
-                    
+                    </div>
 
-                    <!-- Piano Team [PIANI] -->
+
+
+                    <!-- Piano Team [PIANI (AZIENDA)] -->
                     <div class="col-30 margin-50-top border-column min-height-auto">
 
-                        <!-- Icona e titolo [PIANI] -->
+                        <!-- Icona e titolo [PIANI (AZIENDA)] -->
                         <div class="col-plans-type border-bottom">
                             <i class="fas fa-building"></i>
                             <span class="type-user">Azienda</span>
                         </div>
 
                         <div class="info-plan padding-plans">
-                            <!-- Tipo di piano [PIANI] -->
-                            <h3>Enterprise</h3>
-                            <div class="info-price">
-                                <div class="price-plans"><b>Contattaci</b></div>
-                                <div class="date-plans">-</div>
+                            <!-- Tipo di piano [PIANI (AZIENDA)] -->
+                            <div class="container-li-btn">
+                                <h3>Enterprise</h3>
+                                <div class="info-price">
+                                    <div class="price-plans"><b>Contattaci</b></div>
+                                    <div class="date-plans writing-grey">-</div>
+                                </div>
+
+                                <!-- Informazioni di utilizzo [PIANI (AZIENDA)] -->
+                                <ul class="detailed-info-list highlights-plans-list">
+                                    <li><span class="fas fa-user"></span>10 o pi&ugrave; utenti</li>
+                                    <li><span class="fas fa-folder"></span>Soluzioni personalizzabili per la tua azienda
+                                    </li>
+                                    <li><span class="fas fa-share-nodes"></span>Assistenza personalizzata per aiutare gli
+                                        amministratori in una gestione su larga scala</li>
+                                </ul>
+
+                                <!-- Pulsante prova gratuita [PIANI (AZIENDA)] -->
+                                <input type="button" class="general-btn width-100 btn-align" value="Inizia la tua prova gratuita">
                             </div>
-
-                            <!-- Informazioni di utilizzo [PIANI] -->
-                            <ul class="detailed-info-list highlights-plans-list">
-                                <li><span class="fas fa-user"></span>10 o pi&ugrave; utenti</li>
-                                <li><span class="fas fa-folder"></span>Soluzioni personalizzabili per la tua azienda</li>
-                                <li><span class="fas fa-share-nodes"></span>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
-                            </ul>
-
-                            <!-- Pulsante prova gratuita [PIANI] -->
-                            <input type="button" class="general-btn width-100" value="Inizia la tua prova gratuita">
+                        
                             <div class="purchase-plan">oppure <a href="#">acquista ora</a></div>
 
-                            <!-- Punti salienti [PIANI] -->
+                            <!-- Punti salienti [PIANI (AZIENDA)] -->
                             <hr class="hr-plans">
-                                <ul class="highlights-plans-list">
-                                    <li>
-                                        <span>Punti Salienti del piano</span>
-                                    </li>
-                                    <li>
-                                        <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
-                                    </li>
-                                    <li>
-                                        <span class="fas fa-check"></span>Servizio assistenza 24h
-                                    </li>
-                                    <li>
-                                        <span class="fas fa-check"></span>Possibilt&agrave; di personalizzazione totale
-                                    </li>
-                                </ul>
+                            <ul class="highlights-plans-list">
+                                <li>
+                                    <span><b>Punti Salienti del piano</b></span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
+                                </li>
+                                <li>
+                                    <span class="fas fa-check"></span>Servizio assistenza 24h
+                                </li>
+                                <li>
+                                    <span class="fas fa-check"></span>Possibilt&agrave; di personalizzazione totale
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
-                    <!-- Piano Team - Contatto Enterprise [PIANI] -->
+                    <!-- Piano Team - Contatto Enterprise [PIANI (ENTERPRISE)] -->
                     <div class="col-100 margin-50-top border-column">
 
-                        <!-- Icona e titolo [PIANI] -->
+                        <!-- Icona e titolo [PIANI (ENTERPRISE)] -->
                         <div class="col-plans-type border-bottom">
                             <i class="fas fa-building"></i>
                             <span class="type-user">Team</span>
                         </div>
 
                         <div class="row space-btw padding-enterprise">
-                                 <!-- Tipo di piano e informazioni [PIANI] -->
-                                <div class="col-80">
-                                    <h2>Enterprise</h2>
-                                    <div class="margin-20-top"><b>Contatta l'ufficio vendite</b></div>
-                                    <div class="margin-40-top">Soluzioni personalizzate e supporto su misura per aiuta i professionisti IT nella gestione su qualsiasi scala</div>
-                                </div>
+                            <!-- Tipo di piano e informazioni [PIANI (ENTERPRISE)] -->
+                            <div class="col-80">
+                                <h2>Enterprise</h2>
+                                <div class="margin-20-top"><b>Contatta l'ufficio vendite</b></div>
+                                <div class="margin-40-top">Soluzioni personalizzate e supporto su misura per aiuta i
+                                    professionisti IT nella gestione su qualsiasi scala</div>
+                            </div>
 
-                                <!-- Pulsante per contatto [PIANI] -->
-                                <div class="col-20" style="width: auto;">
-                                    <input type="button" value="Contatta l'ufficio vendite" class="general-btn">
-                                </div>
+                            <!-- Pulsante per contatto [PIANI (ENTERPRISE)] -->
+                            <div class="col-20" style="width: auto;">
+                                <input type="button" value="Contatta l'ufficio vendite" class="general-btn">
+                            </div>
                         </div>
                     </div>
                 </div>
-        </section>
-    </div>
+            </section>
+        </div>
 
         <!-- CONTATTI PARTNER-->
         <section class="general">
@@ -278,7 +305,9 @@
                     <!-- Descrizione servizio [CONTATTI PARTNER] -->
                     <div class="col-40 padding-partner">
                         <h3 class="margin-20-top font-size-3d-title">Entra in contatto con un partner Dropbox</h3>
-                        <p class="margin-20-top">Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                        <p class="margin-20-top">Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e
+                            i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione,
+                            integrazione, gestione e supporto continui.</p>
 
                         <!-- Pulsante contatto [CONTATTI PARTNER] -->
                         <input type="button" class="partner-btn" value="Trova un partner">
@@ -291,61 +320,109 @@
         <section class="general">
             <div class="container business padding-top-50">
                 <div class="row space-btw gap-column">
+                    <!-- Colonna titolo [DROPBOX BUSINESS/1] -->
                     <div class="col-100 margin-50-bottom" style="height: 50px;">
                         <h2 class="font-size-2d-title">Esegui più operazioni con Dropbox Business</h2>
-                    </div>  
-        
+                    </div>
+
+                    <!-- Colonna contenente le informazioni [DROPBOX BUSINESS/1] -->
                     <div class="col-33">
+                        <!-- Immagine [DROPBOX BUSINESS/1] -->
                         <div class="col-plans-type auto-height">
-                            <img class="width-100" src="./img/business-feature-switching-tools.png" alt="feature switching tools">
+                            <img class="width-100" src="./img/business-feature-switching-tools.png"
+                                alt="feature switching tools">
                         </div>
 
+                        <!-- Descrizione [DROPBOX BUSINESS/1] -->
                         <h2>Passa di meno da uno strumento all'altro</h2>
-                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
+                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea,
+                            modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file
+                            Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                     </div>
+
+                    <!-- Colonna contenente le informazioni [DROPBOX BUSINESS/2] -->
                     <div class="col-33">
+
+                        <!-- Immagine [DROPBOX BUSINESS/2] -->
                         <div class="col-plans-type auto-height">
-                            <img class="width-100" src="./img/business-feature-send-files-it.png" alt="feature switching tools">
+                            <img class="width-100" src="./img/business-feature-send-files-it.png"
+                                alt="feature switching tools">
                         </div>
 
+                        <!-- Descrizione [DROPBOX BUSINESS/2] -->
                         <h2>Passa di meno da uno strumento all'altro</h2>
-                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
+                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea,
+                            modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file
+                            Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                     </div>
+
+                    <!-- Colonna contenente le informazioni [DROPBOX BUSINESS/3] -->
                     <div class="col-33">
+
+                        <!-- Immagine [DROPBOX BUSINESS/3] -->
                         <div class="col-plans-type auto-height">
-                            <img class="width-100" src="./img/business-feature-coordinate-it.png" alt="feature switching tools">
+                            <img class="width-100" src="./img/business-feature-coordinate-it.png"
+                                alt="feature switching tools">
                         </div>
 
+                        <!-- Descrizione [DROPBOX BUSINESS/3] -->
                         <h2>Passa di meno da uno strumento all'altro</h2>
-                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
+                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea,
+                            modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file
+                            Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                     </div>
+
+                    <!-- Colonna contenente le informazioni [DROPBOX BUSINESS/4] -->
                     <div class="col-33">
+
+                        <!-- Immagine [DROPBOX BUSINESS/4] -->
                         <div class="col-plans-type auto-height margin-50-top">
-                            <img class="width-100" src="./img/business-feature-integrations-it.png" alt="feature switching tools">
+                            <img class="width-100" src="./img/business-feature-integrations-it.png"
+                                alt="feature switching tools">
                         </div>
 
+                        <!-- Descrizione [DROPBOX BUSINESS/4] -->
                         <h2>Passa di meno da uno strumento all'altro</h2>
-                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
+                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea,
+                            modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file
+                            Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                     </div>
+
+                    <!-- Colonna contenente le informazioni [DROPBOX BUSINESS/5] -->
                     <div class="col-33">
+
+                        <!-- Immagine [DROPBOX BUSINESS/5] -->
                         <div class="col-plans-type auto-height margin-50-top">
-                            <img class="width-100" src="./img/business-feature-multi-device.png" alt="feature switching tools">
+                            <img class="width-100" src="./img/business-feature-multi-device.png"
+                                alt="feature switching tools">
                         </div>
 
+                        <!-- Descrizione [DROPBOX BUSINESS/5] -->
                         <h2>Passa di meno da uno strumento all'altro</h2>
-                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
+                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea,
+                            modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file
+                            Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                     </div>
+
+                    <!-- Colonna contenente le informazioni [DROPBOX BUSINESS/6] -->
                     <div class="col-33">
+
+                        <!-- Immagine [DROPBOX BUSINESS/6] -->
                         <div class="col-plans-type auto-height margin-50-top">
-                            <img class="width-100" src="./img/business-feature-security.png" alt="feature switching tools">
+                            <img class="width-100" src="./img/business-feature-security.png"
+                                alt="feature switching tools">
                         </div>
 
+                        <!-- Descrizione [DROPBOX BUSINESS/6] -->
                         <h2>Passa di meno da uno strumento all'altro</h2>
-                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
+                        <p class="margin-20-top">Porta a termine le attività quotidiane con un solo strumento. Crea,
+                            modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file
+                            Microsoft Office e Dropbox Paper direttamente da Dropbox</p>
                     </div>
 
+                    <!-- Scopri di più [DROPBOX BUSINESS] -->
                     <div class="col-100 margin-150-top">
-                        <h2  class="font-size-bigger">Più di 500.000 team utilizzano Dropbox Business</h2>
+                        <h2 class="font-size-bigger">Più di 500.000 team utilizzano Dropbox Business</h2>
                         <div class="padding-top-50"><a href="#">Scopri di più sui nostri clienti</a></div>
                     </div>
                 </div>
@@ -353,22 +430,29 @@
         </section>
 
         <!-- PARTNERS -->
-        <!-- Titolo e link -->
-        <!-- 3 Colonne - scacchiera all'interno di 2 colonne -->
-        <!-- Footer partners -->
         <section class="general">
+            
+            <!-- Container a schermo intero [PARTNERS] -->
             <div class="container-no-max">
+
+                <!-- Sfondo standard [PARTNERS] -->
                 <div class="row designit-bg">
+
+                    <!-- Colonna contenente i 4 quadrati [PARTNERS] -->
                     <div class="col-33 no-gap-width">
+
+                        <!-- Contenitore dei 4 quadrati secondario [PARTNERS] -->
                         <div class="squares-content square-section-1">
                             <div class="square">
                                 <img class="partners-logo invert-img" src="./img/designit.svg" alt="Designit logo">
                             </div>
                             <div class="square">
-                                <img class="partners-logo invert-img" src="./img/arizona_state_university.svg" alt="Arizona university logo">
+                                <img class="partners-logo invert-img" src="./img/arizona_state_university.svg"
+                                    alt="Arizona university logo">
                             </div>
                             <div class="square">
-                                <img class="partners-logo invert-img" src="./img/university_of_florida.svg" alt="Florida university logo">
+                                <img class="partners-logo invert-img" src="./img/university_of_florida.svg"
+                                    alt="Florida university logo">
                             </div>
                             <div class="square">
                                 <img class="partners-logo invert-img" src="./img/topps.svg" alt="Topps">
@@ -376,77 +460,106 @@
                         </div>
                     </div>
 
-                        <div class="col-33 no-gap-width flex-column padding-designit">
-                            <img src="./img/designit.svg" class="designit-logo" alt="Designit logo">
-                            <hr style="width: 25%; border: 1px solid rgb(177, 177, 177);" class="margin-40-top">
-                            <p>"I membri del nostro team lavorano costantemente nei Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quando Dropbox Paper".</p>
-                            <div class="margin-40-top">
-                                <span>Morten Thomsen, Global IT Lead</span>
-                            </div>
-                        </div>
+                    <!-- Colonna contenente un quadrato del partner principale [PARTNERS] -->
+                    <div class="col-33 no-gap-width flex-column padding-designit">
 
+                        <!-- Immagine logo [PARTNERS] -->
+                        <img src="./img/designit.svg" class="designit-logo" alt="Designit logo">
+                        <hr style="width: 25%; border: 1px solid rgb(177, 177, 177);" class="margin-40-top">
+                        <p>"I membri del nostro team lavorano costantemente nei Paesi, fusi orari e uffici diversi. Ora
+                            molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e
+                            Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile
+                            quando Dropbox Paper".</p>
+                        <div class="margin-40-top">
+                            <span>Morten Thomsen, Global IT Lead</span>
+                        </div>
+                    </div>
+
+                    <!-- Colonna contenente i 4 quadrati [PARTNERS] -->
                     <div class="col-33 no-gap-width">
+
+                        <!-- Contenitore dei 4 quadrati secondario [PARTNERS] -->
                         <div class="squares-content square-section-2">
                             <div class="square">
-                                <img class="partners-logo invert-img" src="./img/world_bicycle_relief.svg" alt="Designit logo">
+                                <img class="partners-logo invert-img" src="./img/world_bicycle_relief.svg"
+                                    alt="Designit logo">
                             </div>
                             <div class="square">
-                                <img class="partners-logo invert-img" src="./img/hearst_corp.svg" alt="Arizona university logo">
+                                <img class="partners-logo invert-img" src="./img/hearst_corp.svg"
+                                    alt="Arizona university logo">
                             </div>
                             <div class="square">
-                                <img class="partners-logo invert-img" src="./img/lonely_planet.svg" alt="Florida university logo">
+                                <img class="partners-logo invert-img" src="./img/lonely_planet.svg"
+                                    alt="Florida university logo">
                             </div>
                             <div class="square">
                                 <img class="partners-logo invert-img" src="./img/clear_channel.svg" alt="Topps">
                             </div>
                         </div>
-                    </div>         
-                        <div class="col-100 free-trial-bg">
-                            <div class="container" style="display: flex;">
-                                <div class="col-70 margin-right-200 font-size-3d-title display-flex-center-y">
-                                    <h2>Porta Dropbox Business nella tua azienda.</h2>
-                                </div>
-                                <div class="col-30 no-padding display-flex-center-y">
-                                    <input type="button" value="Inizia la tua prova gratuita" class="general-btn">
-                                </div>
+                    </div>
+
+                    <!-- Sezione per la prova gratuita [PARTNERS] -->
+                    <div class="col-100 free-trial-bg">
+                        <div class="container" style="display: flex;">
+
+                            <!-- Colonna per la descrizione [PARTNERS] -->
+                            <div class="col-70 margin-right-200 font-size-3d-title display-flex-center-y">
+                                <h2>Porta Dropbox Business nella tua azienda.</h2>
                             </div>
-                        </div>                    
+
+                            <!-- Pulsante per la prova gratuita [PARTNERS] -->
+                            <div class="col-30 no-padding display-flex-center-y">
+                                <input type="button" value="Inizia la tua prova gratuita" class="general-btn white-btn">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- FAQ -->
-        <!-- AGGIUNGERE FRECCIA A DESTRA -->
         <section class="general">
             <div class="container padding-top-150">
                 <div class="row">
-                    <div class="col-100 margin-50-top" style="height: 400px;">
+                    
+                    <!-- Colonna per il titolo [FAQ] -->
+                    <div class="col-100 margin-50-top">
                         <h2 class="font-size-2d-title margin-50-bottom">Domande frequenti</h2>
-                        <hr style="border: 1px solid grey;">
+                        <hr class="hr-faq">
+
+                        <!-- Domanda [FAQ/1] -->
                         <div class="padding-y-faq">
                             <b>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</b>
+                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <hr style="border: 1px solid grey;">
+                        <hr class="hr-faq">
+
+                        <!-- Domanda [FAQ/2] -->
                         <div class="padding-y-faq">
                             <b>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</b>
+                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <hr style="border: 1px solid grey;">
+                        <hr class="hr-faq">
+
+                        <!-- Domanda [FAQ/3] -->
                         <div class="padding-y-faq">
                             <b>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</b>
+                            <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <hr style="border: 1px solid grey;">
+                        <hr class="hr-faq">
                     </div>
                 </div>
             </div>
         </section>
-    </main> 
+    </main>
 
     <!-- FOOTER -->
-    <!-- 5 colonne -->
     <footer>
         <div class="bg-black">
             <div class="container">
                 <div class="row">
+
+                    <!-- Colonna contenenti i menù [FOOTER/1] -->
                     <div class="col-20">
                         <div class="footer-list-div">
                             <ul class="footer-ul">
@@ -459,6 +572,7 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Colonna contenenti i menù [FOOTER/2] -->
                     <div class="col-20">
                         <div class="footer-list-div">
                             <ul class="footer-ul">
@@ -471,6 +585,7 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Colonna contenenti i menù [FOOTER/3] -->
                     <div class="col-20">
                         <div class="footer-list-div">
                             <ul class="footer-ul">
@@ -483,6 +598,7 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Colonna contenenti i menù [FOOTER/4] -->
                     <div class="col-20">
                         <div class="footer-list-div">
                             <ul class="footer-ul">
@@ -495,6 +611,7 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Colonna contenenti i menù [FOOTER/5] -->
                     <div class="col-20">
                         <div class="footer-list-div">
                             <ul class="footer-ul">
@@ -507,7 +624,9 @@
                             </ul>
                         </div>
                     </div>
-                    <hr style="border: 1px rgb(200, 200, 200) solid; width: 100px;">
+
+                    <!-- Divisore lingue [FOOTER] -->
+                    <hr class="hr-footer">
                     <div class="col-100">
                         <div class="language-site">
                             <span class="fas fa-globe"></span><span>Italiano &#9650;</span>
@@ -517,6 +636,6 @@
             </div>
         </div>
     </footer>
-
 </body>
+
 </html>

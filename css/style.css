@@ -50,6 +50,10 @@ body{
 }
 
 /* Margini */
+.no-margin{
+    margin: 0;
+}
+
 .margin-20-top{
     margin-top: 20px;
 }
@@ -91,6 +95,11 @@ body{
 /* Bordi delle colonne */
 .border-column{
     border: solid 2px rgb(221, 221, 221);
+}
+
+/* Colore delle scritte */
+.writing-grey{
+    color: #7a7a7a;
 }
 
 /* Container privo di max-width */
@@ -352,6 +361,11 @@ header{
     align-items: center;
 }
 
+.btn-align{
+    position: absolute; 
+    bottom: 0;
+}
+
 /* Padding all'interno delle colonne [PIANI] */
 .padding-plans{
     padding-top: 30px;
@@ -359,6 +373,14 @@ header{
     margin: 0 auto;
     height: 100%;
     font-size: 14px;
+}
+
+/* Allineamento dei pulsanti allo stesso livello */
+.container-li-btn{
+    width: 100%; 
+    position: relative; 
+    min-height: 400px; 
+    margin-bottom: 20px;
 }
 
 /* Ridimensionamento testo per le informazioni [PIANI] */
@@ -396,10 +418,6 @@ hr{
     margin: 30px 0;
 }
 
-/* Altezza automatica delle colonne (in base alla più alta) [PIANI] */
-.min-height-auto{
-    min-height: auto;
-}
 
 /* Icona check nella lista [PIANI] */
 .fa-check{
@@ -423,7 +441,6 @@ hr{
 
 /* Titolo delle liste [PIANI] */
 .highlights-plans-list li:nth-of-type(1){
-    font-weight: 700;
     margin-bottom: 30px;
 }
 
@@ -549,17 +566,29 @@ hr{
     background-color: #F5F5F5;
 }
 
-/* Proca gratuita [PARTNERS 2] */
+/* Prova gratuita [PARTNERS 2] */
 .free-trial-bg{
     background-color: #B4D0E7;
     padding: 150px 0;
     color: #610829;
 }
 
+.white-btn{
+    background-color: white;
+    color: black;
+    padding: 10px 40px;
+}
+
 /* FAQ */
 /* Padding per ogni domanda [FAQ] */
 .padding-y-faq{
-    padding: 5px 0px;
+    padding: 30px 0px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.fa-chevron-down{
+    margin-right: 30px;
 }
 
 /* FOOTER */
@@ -578,7 +607,7 @@ footer{
     padding: 20px 0;
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 30%;
     transform: translate(-50%, -50%);
     color: white;
 }
@@ -586,6 +615,12 @@ footer{
 .footer-ul li{
     line-height: 2;
     font-size: 14px;
+}
+
+/* Stile per l'hr [FAQ] */
+.hr-faq{
+    border: 1px solid grey;
+    margin: 0;
 }
 
 /* Titolo della lista [FOOTER] */
@@ -605,5 +640,15 @@ footer{
 /* Sfondo nero [FOOTER] */
 .bg-black{
     background-color: black;
+}
+
+.bg-black .container{
+    max-width: 1200px;
+}
+
+/* Stile hr [FOOTER] */
+.hr-footer{
+    border: 1px rgb(200, 200, 200) solid; 
+    width: 100px;
 }
 
