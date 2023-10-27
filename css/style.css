@@ -9,25 +9,16 @@
 body{
     font-family: 'Inter', sans-serif;
 }
-/* DA RIMUOVERE */
-.temp-style-1{
+
+/* COMUNI PER L'INTERA PAGINA*/
+/* Contenitore grande*/
+.row{
+    width: 100%;
     height: 100%;
-    background-color: orange;
-    border: dashed 2px black;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.temp-style-2{
-    height: 100%;
-    background-color: rgb(132, 255, 0);
-    border: dashed 2px black;
-}
-
-.temp-height-1{
-    height: 450px;
-}
-
-
-/* COMUNI */
 .container{
     max-width: 1080px;
     height: 100%;
@@ -35,10 +26,12 @@ body{
     margin: 0 auto;
 }
 
+/* Contenitore generale*/
 .general .container{
     max-width: 901px;
 }
 
+/* Padding */
 .padding-top-90{
     padding-top: 90px;
 }
@@ -47,38 +40,16 @@ body{
     padding-top: 150px;
 } 
 
-.display-flex-center-y{
-    display: flex;
-    align-items: center;
-}
-
-.flex-1{
- 
-}
-
-.border-column{
-    border: solid 2px rgb(221, 221, 221);
-}
-
-.highlights-plans-list{
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  
-.highlights-plans-list li {
-    padding-left: 1em;
-    text-indent: -0.8em;
-  }
-  
-.highlights-plans-list li:before {
-    content: "";
-    padding-right: 5px;
-  }
-
 .padding-top-50{
     padding-top: 50px;
 }
+
+/* Rimozione padding */
+.no-padding{
+    padding: 0;
+}
+
+/* Margini */
 .margin-20-top{
     margin-top: 20px;
 }
@@ -107,6 +78,22 @@ body{
     margin-right: 20px;
 }
 
+/* Display */
+.display-flex-center-y{
+    display: flex;
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+/* Bordi delle colonne */
+.border-column{
+    border: solid 2px rgb(221, 221, 221);
+}
+
+/* Container privo di max-width */
 .container-no-max{
     padding-top: 100px;
     height: 100%;
@@ -114,6 +101,7 @@ body{
     margin: 0 auto;
 }
 
+/* Pulsanti generali */
 .general-btn{
     border: none;
     background-color: #0061FF;
@@ -123,94 +111,7 @@ body{
     color: white;
 }
 
-.jumbo-descr{
-    font-size: 17px;
-}
-
-.jumbo-arrow{
-    position: absolute;
-    bottom: 70px;
-}
-
-.jumbo-title{
-    font-size: 70px;
-}
-
-.bg-jumbo{
-    background-color: #B4D0E7;
-    height: 800px;
-}
-
-.jumbo-img{
-    width: 900px;
-    margin-top: 0px;
-}
-
-.no-padding{
-    padding: 0;
-}
-
-.bg-black{
-    background-color: black;
-}
-
-/*********************************************/
-
-/* UTILI RIUTILIZZABILI */
-.space-btw{
-    justify-content: space-between;
-}
-
-/* HEADER */
-header{
-    width: 100%;
-    height: 80px;
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    z-index: 1;
-    color: rgb(48, 48, 48);
-}
-
-.header-btn{
-    border: none;
-    background-color: #0061FF;
-    padding: 10px 25px;
-    font-size: 15px;
-    color: white;
-}
-
-.row{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col-header{
-    width: 500px;
-    display: flex;
-}
-
-.menu-sx-ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.menu-sx-li{
-    margin-left: 20px;
-}
-
-.menu-align-flex-end{
-    justify-content: flex-end;
-    margin-right: 20px;
-}
-
-.flex-column{
-    flex-direction: column;
-}
-/* MAIN */
-/* JUMBOTRON */
+/* Gestione dei font */
 .font-size-title{
     font-size: 80px;
     font-weight: 700;
@@ -229,19 +130,23 @@ header{
     margin-right: 250px;
 }
 
+/* Dimensione testo titoli */
+.sub-title{
+    font-size: 40px;
+}
+
+/* Impostazione width 100% */
 .width-100{
     width: 100%;
 }
 
-.jumbo-position{
-    position: relative; 
-    top: 60px;
+.space-btw{
+    justify-content: space-between;
 }
 
 /* COLONNE */
-.col-100{
-    width: 100%;
-
+.col-20{
+    width: calc(100% / 5);
     position: relative;
 }
 
@@ -257,34 +162,146 @@ header{
     width: 40%;
 }
 
+.col-60{
+    width: 60%;
+}
+
 .col-70{
     width: 70%;
 
 }
 
-.col-60{
-    width: 60%;
+.col-80{
+    width: 75%;
 }
 
-/* MAIN GENERALE */
-/* CHECKBOX STYLE */
-.checkbox-div {
-    display: block;
+.col-100{
+    width: 100%;
     position: relative;
-    padding-left: 25px;
-    margin-bottom: 12px;
+}
+
+
+/* Aggiunta del bordo sotto */
+.border-bottom{
+    border-bottom: 2px solid rgb(221, 221, 221);
+}
+
+
+/* JUMBOTRON */
+/* Sezione descrizione [JUMBOTRON] */
+.jumbo-descr{
+    font-size: 17px;
+}
+
+/* Freccia [JUMBOTRON] */
+.jumbo-arrow{
+    position: absolute;
+    bottom: 70px;
+}
+
+/* Titolo [JUMBOTRON] */
+.jumbo-title{
+    font-size: 70px;
+}
+
+/* Sfondo [JUMBOTRON] */
+.bg-jumbo{
+    background-color: #B4D0E7;
+    height: 800px;
+}
+
+/* Immagine [JUMBOTRON] */
+.jumbo-img{
+    width: 900px;
+    margin-top: 0px;
+}
+
+/* PIANI */
+/* Lista della colonna dei piani [PIANI] */
+.highlights-plans-list{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+/* Allineamente con l'icona [PIANI] */
+.highlights-plans-list li {
+    padding-left: 1em;
+    text-indent: -0.8em;
+  }
+  
+.highlights-plans-list li:before {
+    content: "";
+    padding-right: 5px;
+  }
+  
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 1;
+    color: rgb(48, 48, 48);
+}
+
+/* Pulsante SOLO header [HEADER] */
+.header-btn{
+    border: none;
+    background-color: #0061FF;
+    padding: 10px 25px;
+    font-size: 15px;
+    color: white;
+}
+
+/* Colonne dei due menù [HEADER] */
+.col-header{
+    width: 500px;
+    display: flex;
+}
+
+/* Lista dei menù [HEADER] */
+.menu-sx-ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-sx-li{
+    margin-left: 20px;
+}
+
+/* Allineamento a destra del secondo menù [HEADER] */
+.menu-align-flex-end{
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+
+/* PIANI */
+/* CHECKBOX STYLE */
+/* Posizionamento delle checkbox [PIANI/CHECKBOX]*/
+.checkbox-div {
+    position: relative;
     cursor: pointer;
     font-size: 14px;
+    display: inline-block;
+
+    margin-right: 40px;
+    margin-bottom: 12px;
+    margin-top: 40px;
+    padding-left: 25px;
 }
   
-/* Rimuove le checkbox di default */
+/* Rimuove le checkbox di default [PIANI/CHECKBOX]*/
 .checkbox-div input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
   
-/* Creazione della checkbox con lo stile */
+/* Creazione della checkbox con lo stile [PIANI/CHECKBOX]*/
 .checkmark {
     position: absolute;
     top: 0;
@@ -299,24 +316,24 @@ header{
     background-color: #ccc;
 }
   
-/* Quando la checkbox è seleziona mette lo sfondo blu */
+/* Quando la checkbox è seleziona mette lo sfondo blu [PIANI/CHECKBOX]*/
 .checkbox-div input:checked ~ .checkmark {
     background-color: #2196F3;
 }
   
-/* Creazione del cerchio per la checkbox attiva */
+/* Creazione del cerchio per la checkbox attiva [PIANI/CHECKBOX]*/
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
   
-/* Mostra il cerchio quando la checkbox è attiva */
+/* Mostra il cerchio quando la checkbox è attiva [PIANI/CHECKBOX]*/
 .checkbox-div input:checked ~ .checkmark:after {
     display: block;
 }
   
-  /* Style the indicator (dot/circle) */
+/* Stile dell'indicatore per la checkbox attiva [PIANI/CHECKBOX]*/
 .checkbox-div .checkmark:after {
     top: 50%;
     left: 50%;
@@ -327,17 +344,7 @@ header{
     background: white;
 }
 
-.sub-title{
-    font-size: 40px;
-}
-
-.checkbox-div{
-    margin-top: 40px;
-    display: inline-block;
-    margin-right: 40px;
-}
-
-/* COLONNE PIANI */
+/* Colonne [PIANI] */
 .col-plans-type{
     height: 40px;
     display: flex;
@@ -345,10 +352,7 @@ header{
     align-items: center;
 }
 
-.border-bottom{
-    border-bottom: 2px solid rgb(221, 221, 221);
-}
-
+/* Padding all'interno delle colonne [PIANI] */
 .padding-plans{
     padding-top: 30px;
     max-width: 80%;
@@ -357,21 +361,25 @@ header{
     font-size: 14px;
 }
 
+/* Ridimensionamento testo per le informazioni [PIANI] */
 .info-plan h3{
     font-size: 25px;
 }
 
+/* Ridimensionamento e gestione del testo per le info. prezzi [PIANI] */
 .info-price{
     margin-top: 15px;
     line-height: 1.6;
     font-size: 15px;
 }
 
+/* Gestione del testo per il tipo di utente [PIANI] */
 .type-user{
     margin-left: 5px;
     font-size: 17px;
 }
 
+/* Lista per i dettagli del piano [PIANI] */
 .detailed-info-list{
     margin-top: 35px;
 }
@@ -388,20 +396,23 @@ hr{
     margin: 30px 0;
 }
 
-/* L'altezza delle colonne dei piani viene data in automatico in base alla più alta */
+/* Altezza automatica delle colonne (in base alla più alta) [PIANI] */
 .min-height-auto{
     min-height: auto;
 }
 
+/* Icona check nella lista [PIANI] */
 .fa-check{
     color: rgb(0, 89, 255);
 }
 
+/* Mezza linea divisore dei dettagli [PIANI] */
 .hr-plans{
     border: 1px solid gainsboro;
     width: 30%;
 }
 
+/* Gestione lista secondaria[PIANI] */
 .highlights-plans-list{
     list-style: none;
 }
@@ -410,55 +421,24 @@ hr{
     margin-bottom: 20px;
 }
 
-
+/* Titolo delle liste [PIANI] */
 .highlights-plans-list li:nth-of-type(1){
     font-weight: 700;
     margin-bottom: 30px;
 }
 
-/* COL-100 */
-.col-enterprise-contact{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    background-color: red;
-}
-
-.enterprise-btn{
-    margin: 0;
-}
-
-.enterprise-pad{
-    max-width: 95%;
-}
-
-.enterprise-descr{
-    display: flex;
-    align-items: end;
-}
-
-.enterprise-btn-col{
-    display: flex;
-    justify-content: end;
-}
-
-.col-80{
-    width: 75%;
-}
-
+/* Padding nella colonna enterprise [PIANI/ENTERPRISE] */
 .padding-enterprise{
     padding: 20px;
 }
 
+/* PARTNER */
+/* Distanziamento della descrizione dall'immagine [PARTNER] */
 .padding-partner{
     padding: 30px;
 }
 
-.padding-designit{
-    padding: 50px;
-}
-
+/* Pulsante "Trova un partner" [PARTNER] */
 .partner-btn{
     margin-top: 30px;
     padding: 10px 15px;
@@ -466,54 +446,51 @@ hr{
     border: 2px solid gray;
 }
 
+
+/* Padding del logo Designit nel quadrato principale [PARTNER] */
+.padding-designit{
+    padding: 50px;
+}
+
+
 /* BUSINESS */
+/* Margine della sezione Business dalla sezione sovrastante [BUSINESS] */
 .business{
     margin-top: 50px;
 }
 
+/* Margine della varie colonne [BUSINESS] */
 .gap-column{
     gap: 20px;
 }
 
-/* PARTENRS */
-.col-50-square{
-    width: calc(100% / 2);
+/* Altezza automatica per le colonne contenenti la descrizione [BUSINESS] */
+.auto-height{
+    height: auto;
 }
 
-.partners-square{
-    background-color: red;
-    border: solid 1px black;
-    width: 100%;
-    height: 100% ;
-}
-
+/* PARTNERS 2 */
+/* Larghezza senza gap [PARTNERS 2] */
 .no-gap-width{
     width: calc(100% / 3);
     display: flex;
 }
 
-/* CARATTERISTICHE */
-.auto-height{
-    height: auto;
-}
-
-/* PARTNERS */
+/* Contenitori dei quadrati [PARTNERS 2] */
 .squares-content{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Contenitori dei quadrati [PARTNERS 2] */
 .square{
     width: 50%;
     height: calc(100vw / 6);
     position: relative;
 }
 
-.fa-2xl{
-    line-height: -1;
-}
-
+/* Loghi dei partner [PARTNERS 2] */
 .partners-logo{
     width: 150px;
     position: absolute;
@@ -522,6 +499,7 @@ hr{
     transform: translate(-50%, -50%);
 }
 
+/* Gestione dei colori per i quadrati [PARTNERS 2] */
 .square-section-1 .square:nth-last-of-type(4){
     background-color: #A2D39B;
     border: solid 15px #D1E9CD; 
@@ -556,26 +534,30 @@ hr{
     background-color: #FFD830;
 }
 
+/* Inversione dei colori per loghi bianchi [PARTNERS 2] */
+.invert-img{
+    filter: invert(1);
+}
+
+/* Gestione della dimensione del partner principale [PARTNERS 2] */
 .designit-logo{
     width: 250px;
 }
 
+/* Sfondo del partner principale [PARTNERS 2] */
 .designit-bg{
     background-color: #F5F5F5;
 }
 
+/* Proca gratuita [PARTNERS 2] */
 .free-trial-bg{
     background-color: #B4D0E7;
     padding: 150px 0;
     color: #610829;
 }
 
-
-.invert-img{
-    filter: invert(1);
-}
-
 /* FAQ */
+/* Padding per ogni domanda [FAQ] */
 .padding-y-faq{
     padding: 5px 0px;
 }
@@ -584,15 +566,13 @@ hr{
 footer{
     margin-top: 120px;
 }
-.col-20{
-    width: calc(100% / 5);
 
-    position: relative;
-}
-
+/* Padding verticale per le liste [FOOTER] */
 .footer-list-div{
     padding: 200px 0;
 }
+
+/* Gestione delle liste [FOOTER] */
 .footer-ul{
     list-style: none;
     padding: 20px 0;
@@ -608,15 +588,22 @@ footer{
     font-size: 14px;
 }
 
+/* Titolo della lista [FOOTER] */
 .footer-ul li:nth-last-child(6){
     font-size: 20px;
     font-weight: 800;
     margin-bottom: 10px;
 }
 
+/* Sezione della lingua del sito [FOOTER] */
 .language-site{
     color: #b3b3b3;
     font-size: 13px;
     margin-bottom: 40px;
+}
+
+/* Sfondo nero [FOOTER] */
+.bg-black{
+    background-color: black;
 }
 
