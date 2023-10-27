@@ -49,6 +49,11 @@ body{
     padding-top: 150px;
 } 
 
+.display-flex-center-y{
+    display: flex;
+    align-items: center;
+}
+
 .flex-1{
  
 }
@@ -96,12 +101,15 @@ body{
     margin-bottom: 50px;
 }
 
+.margin-right-200{
+    margin-right: 200px;
+}
+
 .container-no-max{
     padding-top: 100px;
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    background-color: rgb(0, 255, 42);
 }
 
 .general-btn{
@@ -178,6 +186,10 @@ header{
     justify-content: flex-end;
     margin-right: 20px;
 }
+
+.flex-column{
+    flex-direction: column;
+}
 /* MAIN */
 /* JUMBOTRON */
 .font-size-title{
@@ -211,7 +223,6 @@ header{
 
 .col-30{
     width: 30%;
-    height: 400px;
 }
 
 .col-33{
@@ -224,7 +235,7 @@ header{
 
 .col-70{
     width: 70%;
-    height: 450px;
+
 }
 
 .col-60{
@@ -387,9 +398,73 @@ hr{
 .square{
     width: 50%;
     height: calc(100vw / 6);
-    border: 1px solid black;
+    position: relative;
 }
 
+.fa-2xl{
+    line-height: -1;
+}
+
+.partners-logo{
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.square-section-1 .square:nth-last-of-type(4){
+    background-color: #A2D39B;
+    border: solid 15px #D1E9CD; 
+}
+
+.square-section-1 .square:nth-last-of-type(3){
+    background-color: #61082B;
+}
+
+.square-section-1 .square:nth-last-of-type(2){
+    background-color: #0093CE;
+}
+
+.square-section-1 .square:nth-last-of-type(1){
+    background-color: #FF1C1C;
+}
+
+
+.square-section-2 .square:nth-last-of-type(4){
+    background-color: #D5001F;
+}
+
+.square-section-2 .square:nth-last-of-type(3){
+    background-color: #B4D0E7;
+}
+
+.square-section-2 .square:nth-last-of-type(2){
+    background-color: #0D2481;
+}
+
+.square-section-2 .square:nth-last-of-type(1){
+    background-color: #FFD830;
+}
+
+.designit-logo{
+    width: 250px;
+}
+
+.designit-bg{
+    background-color: #F5F5F5;
+}
+
+.free-trial-bg{
+    background-color: #B4D0E7;
+    padding: 150px 0;
+    color: #610829;
+}
+
+
+.invert-img{
+    filter: invert(1);
+}
 /* FOOTER */
 footer{
     margin-top: 120px;
