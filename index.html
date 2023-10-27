@@ -28,31 +28,37 @@
             <div class="col-header menu-align-flex-end">
                 <ul class="menu-sx-ul">
                     <li class="menu-sx-li">Supporto</li>
-                    <li class="menu-sx-li">Contatta l'ufficio vendite</li>
+                    <li class="menu-sx-li margin-right-20">Contatta l'ufficio vendite</li>
                     <li class="menu-sx-li">Accedi</li>
-                    <li class="menu-sx-li">Inizia</li>
+                    <li class="menu-sx-li"><input class="header-btn" type="button" value="Inizia"></li>
                 </ul>
             </div>
         </div>
     </header>
 
     <!-- MAIN -->
-    <!-- JUMBOTRON -->
-    <!-- Contenitore più largo -->
-    <!-- Formato da 3 colonne: Titolo, Contenuto, Immagine -->
     <main>
         <!-- Sezione Jumbotron -->
         <section>
+            <!-- Sfondo [JUMBOTRON] -->
             <div class="bg-jumbo">
                 <div class="container padding-top-150">
                     <div class="row" style="gap: 30px 0;">
+
+                        <!-- Titolo principale [JUMBOTRON] -->
                         <div class="col-100 font-size-title">Tutto ciò che ti serve per il lavoro, in un unico posto</div>
-                        <div class="col-30" style="position: relative;">
+
+                        <!-- Descrizione [JUMBOTRON] -->
+                        <div class="col-30">
                             <p class="jumbo-descr">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
                             <input type="button" class="general-btn" value="Inizia la tua prova gratuita">
                             <div class="cancel-free-trial">Annulla in qualsiasi momento</div>
+
+                            <!-- Freccia [JUMBOTRON] -->
                             <i class="fas fa-arrow-down fa-2xl jumbo-arrow" style="font-size: 50px;"></i>
                         </div>
+
+                        <!-- Immagine [JUMBOTRON] -->
                         <div class="col-70">
                             <img src="./img/jumbo.png" alt="jumbo image" class="jumbo-img">
                         </div>
@@ -61,52 +67,61 @@
             </div>
         </section>
 
-     <!-- Contenitore più stretto -->
-    <!-- PIANI -->
-    <!-- Titolo e checkbox -->
-    <!-- 4 colonne -->
-        <!-- Sezione Generale -->
+        <!-- PIANI -->
         <section class="general">
+            <!-- Container piccolo [PIANI] -->
             <div class="container margin-50-top padding-top-90">
                 <div class="row space-btw">
-                    <!-- !!!ALTEZZE DA RIMUOVERE!!! -->
-                    <div class="col-100" style="height: 100px;">
+
+                    <div class="col-100">
+                        <!-- Titolo principale [PIANI] -->
                         <h2 class="sub-title">Trova il piano business che fa per te</h2>
 
-                        <div class="checkbox-div">
+                        <!-- Checkbox scelta fatturazione [PIANI] -->
+                        <label class="checkbox-div">Fatturazione mensile
                             <input type="radio" name="Fatturazione mensile" id="monthly">
-                            <label for="invoice-time">Fatturazione mensile</label>
-                        </div>
+                            <span class="checkmark"></span>
+                        </label>
 
-                        <div class="checkbox-div">
+                        <label class="checkbox-div">Fatturazione Annuale
                             <input type="radio" name="Fatturazione mensile" id="annual">
-                            <label for="invoice-time">Fatturazione Annuale</label>
-                        </div>
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
-                    <!-- MIN-HEIGHT COL-30 -->
-                    <div class="col-30 margin-50-top border-column" style="height: 880px;">
+
+                    <!-- 3 Colonne per i diversi piani [PIANI] -->
+                    <!-- Piano Singolo [PIANI] -->
+                    <div class="col-30 margin-50-top border-column min-height-auto">
+
+                        <!-- Icona e titolo [PIANI] -->
                         <div class="col-plans-type border-bottom">
                             <i class="fas fa-user"></i>
                             <span class="type-user">Singolo</span>
                         </div>
 
                         <div class="info-plan padding-plans">
+                            <!-- Tipo di piano [PIANI] -->
                             <h3>Professional</h3>
+
+                            <!-- Informazione prezzo [PIANI] -->
                             <div class="info-price">
-                                <div class="price-plans">&euro; 12.00</div>
+                                <div class="price-plans"><b>&euro; 12.00</b></div>
                                 <div class="date-plans">&sol;mese</div>
                             </div>
 
+                            <!-- Informazioni di utilizzo [PIANI] -->
                             <ul class="detailed-info-list highlights-plans-list">
                                 <li><span class="fas fa-user"></span>1 utente</li>
-                                <li><span class="fas fa-user"></span>5 TB di spazio di archiviazione sicuro</li>
-                                <li><span class="fas fa-user"></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                                <li><span class="fas fa-folder"></span>5 TB di spazio di archiviazione sicuro</li>
+                                <li><span class="fas fa-share-nodes"></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
                             </ul>
 
+                            <!-- Pulsante prova gratuita [PIANI] -->
                             <input type="button" class="general-btn width-100" value="Inizia la tua prova gratuita">
-
                             <div class="purchase-plan">oppure <a href="#">acquista ora</a></div>
-                            <hr>
+
+                            <!-- Punti salienti [PIANI] -->
+                            <hr class="hr-plans">
                                 <ul class="highlights-plans-list">
                                     <li>
                                         </span>Punti Salienti del piano
@@ -119,94 +134,127 @@
                                     </li>
                                 </ul>
                         </div>
-
-                        
                     </div>
-                    <div class="col-30 margin-50-top border-column" style="height: 880px;">
+
+
+                    <!-- Piano Team [PIANI] -->
+                    <div class="col-30 margin-50-top border-column min-height-auto">
+
+                        <!-- Icona e titolo [PIANI] -->
                         <div class="col-plans-type border-bottom">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fa-users"></i>
                             <span class="type-user">Team</span>
                         </div>
 
                         <div class="info-plan padding-plans">
-                            <h3>Professional</h3>
+                            <!-- Tipo di piano [PIANI] -->
+                            <h3>Advanced</h3>
                             <div class="info-price">
-                                <div class="price-plans">&euro; 12.00</div>
-                                <div class="date-plans">&sol;mese</div>
+                                <div class="price-plans"><b>&euro; 18.00</b></div>
+                                <div class="date-plans">&sol;utente&sol;mese</div>
                             </div>
 
+                            <!-- Informazioni di utilizzo [PIANI] -->
                             <ul class="detailed-info-list highlights-plans-list">
                                 <li><span class="fas fa-user"></span>1 utente</li>
-                                <li><span class="fas fa-user"></span>5 TB di spazio di archiviazione sicuro</li>
-                                <li><span class="fas fa-user"></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                                <li><span class="fas fa-folder"></span>5 TB di spazio di archiviazione sicuro</li>
+                                <li><span class="fas fa-share-nodes"></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
                             </ul>
 
+                            <!-- Pulsante prova gratuita [PIANI] -->
                             <input type="button" class="general-btn width-100" value="Inizia la tua prova gratuita">
-
                             <div class="purchase-plan">oppure <a href="#">acquista ora</a></div>
-                            <hr>
+
+                            <!-- Punti salienti [PIANI] -->
+                            <hr class="hr-plans">
                                 <ul class="highlights-plans-list">
                                     <li>
                                         </span>Punti Salienti del piano
                                     </li>
                                     <li>
-                                        <span class="fas fa-check"></span>Invia file fino a 100 GB con Dropbox Transfert 
+                                        <span class="fas fa-check"></span>Nessun limite di spazio per i file
                                     </li>
                                     <li>
                                         <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
                                     </li>
+                                    <li>
+                                        <span class="fas fa-check"></span>Risparmio del 50&percnt; rispetto alle iscrizione singole 
+                                    </li>
+                                    <li>
+                                        <span class="fas fa-check"></span>Possibilt&agrave; di inserire nuovi membri del team
+                                    </li>
+                                    <li>
+                                        <span class="fas fa-check"></span>Gestione dei permessi in base ai ruoli
+                                    </li>
                                 </ul>
                         </div>
-
-                        
                     </div>
-                    <div class="col-30 margin-50-top border-column" style="height: 880px;">
+
+                    <!-- Piano Team [PIANI] -->
+                    <div class="col-30 margin-50-top border-column min-height-auto">
+
+                        <!-- Icona e titolo [PIANI] -->
                         <div class="col-plans-type border-bottom">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fa-building"></i>
                             <span class="type-user">Azienda</span>
                         </div>
 
                         <div class="info-plan padding-plans">
-                            <h3>Professional</h3>
+                            <!-- Tipo di piano [PIANI] -->
+                            <h3>Enterprise</h3>
                             <div class="info-price">
-                                <div class="price-plans">&euro; 12.00</div>
-                                <div class="date-plans">&sol;mese</div>
+                                <div class="price-plans"><b>Contattaci</b></div>
+                                <div class="date-plans">-</div>
                             </div>
 
+                            <!-- Informazioni di utilizzo [PIANI] -->
                             <ul class="detailed-info-list highlights-plans-list">
                                 <li><span class="fas fa-user"></span>1 utente</li>
-                                <li><span class="fas fa-user"></span>5 TB di spazio di archiviazione sicuro</li>
-                                <li><span class="fas fa-user"></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                                <li><span class="fas fa-folder"></span>5 TB di spazio di archiviazione sicuro</li>
+                                <li><span class="fas fa-share-nodes"></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
                             </ul>
 
+                            <!-- Pulsante prova gratuita [PIANI] -->
                             <input type="button" class="general-btn width-100" value="Inizia la tua prova gratuita">
-
                             <div class="purchase-plan">oppure <a href="#">acquista ora</a></div>
-                            <hr>
+
+                            <!-- Punti salienti [PIANI] -->
+                            <hr class="hr-plans">
                                 <ul class="highlights-plans-list">
                                     <li>
                                         </span>Punti Salienti del piano
                                     </li>
                                     <li>
-                                        <span class="fas fa-check"></span>Invia file fino a 100 GB con Dropbox Transfert 
+                                        <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
                                     </li>
                                     <li>
-                                        <span class="fas fa-check"></span>Cartelle offline su dispositivi mobili
+                                        <span class="fas fa-check"></span>Servizio assistenza 24h
+                                    </li>
+                                    <li>
+                                        <span class="fas fa-check"></span>Possibilt&agrave; di personalizzazione totale
                                     </li>
                                 </ul>
                         </div>
                     </div>
-                    <div class="col-100 margin-50-top border-column" style="height: 240px;">
+
+                    <!-- Piano Team - Contatto Enterprise [PIANI] -->
+                    <div class="col-100 margin-50-top border-column">
+
+                        <!-- Icona e titolo [PIANI] -->
                         <div class="col-plans-type border-bottom">
-                            <i class="fas fa-user"></i>
+                            <i class="fas fa-building"></i>
                             <span class="type-user">Team</span>
                         </div>
-                        <div class="row space-btw padding-enterprise" style="height: calc(100% - 40px);">
+
+                        <div class="row space-btw padding-enterprise">
+                                 <!-- Tipo di piano e informazioni [PIANI] -->
                                 <div class="col-80">
                                     <h2>Enterprise</h2>
                                     <div class="margin-20-top"><b>Contatta l'ufficio vendite</b></div>
                                     <div class="margin-40-top">Soluzioni personalizzate e supporto su misura per aiuta i professionisti IT nella gestione su qualsiasi scala</div>
                                 </div>
+
+                                <!-- Pulsante per contatto [PIANI] -->
                                 <div class="col-20" style="width: auto;">
                                     <input type="button" value="Contatta l'ufficio vendite" class="general-btn">
                                 </div>
@@ -251,7 +299,7 @@
                     </div>
                     <div class="col-33">
                         <div class="col-plans-type auto-height">
-                            <img class="width-100" src="./img/business-feature-switching-tools.png" alt="feature switching tools">
+                            <img class="width-100" src="./img/business-feature-send-files-it.png" alt="feature switching tools">
                         </div>
 
                         <h2>Passa di meno da uno strumento all'altro</h2>
@@ -259,7 +307,7 @@
                     </div>
                     <div class="col-33">
                         <div class="col-plans-type auto-height">
-                            <img class="width-100" src="./img/business-feature-switching-tools.png" alt="feature switching tools">
+                            <img class="width-100" src="./img/business-feature-coordinate-it.png" alt="feature switching tools">
                         </div>
 
                         <h2>Passa di meno da uno strumento all'altro</h2>
@@ -267,7 +315,7 @@
                     </div>
                     <div class="col-33">
                         <div class="col-plans-type auto-height margin-50-top">
-                            <img class="width-100" src="./img/business-feature-switching-tools.png" alt="feature switching tools">
+                            <img class="width-100" src="./img/business-feature-integrations-it.png" alt="feature switching tools">
                         </div>
 
                         <h2>Passa di meno da uno strumento all'altro</h2>
@@ -275,7 +323,7 @@
                     </div>
                     <div class="col-33">
                         <div class="col-plans-type auto-height margin-50-top">
-                            <img class="width-100" src="./img/business-feature-switching-tools.png" alt="feature switching tools">
+                            <img class="width-100" src="./img/business-feature-multi-device.png" alt="feature switching tools">
                         </div>
 
                         <h2>Passa di meno da uno strumento all'altro</h2>
@@ -283,7 +331,7 @@
                     </div>
                     <div class="col-33">
                         <div class="col-plans-type auto-height margin-50-top">
-                            <img class="width-100" src="./img/business-feature-switching-tools.png" alt="feature switching tools">
+                            <img class="width-100" src="./img/business-feature-security.png" alt="feature switching tools">
                         </div>
 
                         <h2>Passa di meno da uno strumento all'altro</h2>
@@ -302,12 +350,6 @@
         <!-- 3 Colonne - scacchiera all'interno di 2 colonne -->
         <!-- Footer partners -->
         <section class="general">
-
-
-
-
-
-
             <div class="container-no-max">
                 <div class="row designit-bg">
                     <div class="col-33 no-gap-width">
@@ -351,13 +393,7 @@
                                 <img class="partners-logo invert-img" src="./img/clear_channel.svg" alt="Topps">
                             </div>
                         </div>
-                    </div>
-
-
-
-
-
-                    
+                    </div>         
                         <div class="col-100 free-trial-bg">
                             <div class="container" style="display: flex;">
                                 <div class="col-70 margin-right-200 font-size-3d-title display-flex-center-y">

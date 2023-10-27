@@ -103,6 +103,10 @@ body{
     margin-right: 200px;
 }
 
+.margin-right-20{
+    margin-right: 20px;
+}
+
 .container-no-max{
     padding-top: 100px;
     height: 100%;
@@ -125,11 +129,12 @@ body{
 
 .jumbo-arrow{
     position: absolute;
-    bottom: 15px;
+    bottom: 70px;
 }
 
 .bg-jumbo{
     background-color: #B4D0E7;
+    height: 800px;
 }
 
 .jumbo-img{
@@ -160,6 +165,14 @@ header{
     position: fixed;
     z-index: 1;
     color: rgb(48, 48, 48);
+}
+
+.header-btn{
+    border: none;
+    background-color: #0061FF;
+    padding: 10px 25px;
+    font-size: 15px;
+    color: white;
 }
 
 .row{
@@ -216,6 +229,11 @@ header{
     width: 100%;
 }
 
+.jumbo-position{
+    position: relative; 
+    top: 60px;
+}
+
 /* COLONNE */
 .col-100{
     width: 100%;
@@ -245,6 +263,66 @@ header{
 }
 
 /* MAIN GENERALE */
+/* CHECKBOX STYLE */
+.checkbox-div {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+  
+/* Rimuove le checkbox di default */
+.checkbox-div input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+/* Creazione della checkbox con lo stile */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.checkbox-div:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+/* Quando la checkbox è seleziona mette lo sfondo blu */
+.checkbox-div input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+  
+/* Creazione del cerchio per la checkbox attiva */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Mostra il cerchio quando la checkbox è attiva */
+.checkbox-div input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the indicator (dot/circle) */
+.checkbox-div .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
 .sub-title{
     font-size: 40px;
 }
@@ -306,6 +384,20 @@ hr{
     margin: 30px 0;
 }
 
+/* L'altezza delle colonne dei piani viene data in automatico in base alla più alta */
+.min-height-auto{
+    min-height: auto;
+}
+
+.fa-check{
+    color: rgb(0, 89, 255);
+}
+
+.hr-plans{
+    border: 1px solid gainsboro;
+    width: 30%;
+}
+
 .highlights-plans-list{
     list-style: none;
 }
@@ -316,7 +408,7 @@ hr{
 
 
 .highlights-plans-list li:nth-of-type(1){
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 
