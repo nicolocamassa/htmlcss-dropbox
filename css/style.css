@@ -132,6 +132,10 @@ body{
     bottom: 70px;
 }
 
+.jumbo-title{
+    font-size: 70px;
+}
+
 .bg-jumbo{
     background-color: #B4D0E7;
     height: 800px;
