@@ -455,6 +455,13 @@ hr{
     padding: 50px;
 }
 
+.partner-btn{
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: white;
+    border: 2px solid gray;
+}
+
 /* BUSINESS */
 .business{
     margin-top: 50px;
