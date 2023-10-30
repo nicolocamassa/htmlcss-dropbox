@@ -656,6 +656,7 @@ footer{
 }
 
 /* CLASSI PER IL BONUS */
+/* Hover bottoni */
 .general-btn:hover{
     cursor: pointer;
     background-color: #2131be;
@@ -673,4 +674,20 @@ footer{
 .partner-btn:hover{
     cursor: pointer;
     background-color: #d1d1d1;;
+}
+
+/* Menù hover */
+.menu-sx-ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-ul li:hover:nth-last-of-type(6){
+    cursor:default;
+    text-decoration: none;
 }
