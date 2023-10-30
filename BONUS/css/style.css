@@ -586,8 +586,7 @@ hr{
 /* Padding per ogni domanda [FAQ] */
 .padding-y-faq{
     padding: 30px 0px;
-    display: flex; 
-    justify-content: space-between;
+    transition-duration: 1s;
 }
 
 .fa-chevron-down{
@@ -690,4 +689,24 @@ footer{
 .footer-ul li:hover:nth-last-of-type(6){
     cursor:default;
     text-decoration: none;
+}
+
+/* FAQ hover */
+.faq-answer{
+    padding: 20px 300px 0px 0px;
+    display: none;
+}
+
+
+.padding-y-faq:hover .faq-answer{
+    display: block;
+}
+
+.padding-y-faq:hover i{
+    transform: rotate(180deg);
+}
+
+.faq-ask{
+    display: flex;
+    justify-content: space-between;
 }
